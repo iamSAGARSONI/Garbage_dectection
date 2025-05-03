@@ -30,7 +30,7 @@ detectBtn.addEventListener('click', () => {
   formData.append('image', uploadedFile);
 
   // ← replace with your actual ngrok URL:
-  fetch('https://1d53-34-42-230-99.ngrok-free.app', {
+  fetch('https://af50-34-42-230-99.ngrok-free.app', {
     method: 'POST',
     body: formData
   })
