@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Garbage Material Detector</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <h1>♻️ Garbage Material Detector</h1>
+      <p>Upload an image of waste to see what materials it contains</p>
+    </header>
+
+    <main>
+      <div class="upload-card">
+        <input type="file" id="imageUpload" accept="image/*" />
+        <label for="imageUpload" class="upload-label">Choose Image</label>
+        <img id="preview" alt="Preview" />
+      </div>
+
+      <button id="detectBtn" class="btn" disabled>Detect Garbage</button>
+
+      <div id="result" class="result-box"></div>
+    </main>
+
+    <footer>
+      <small>Powered by YOLOv8 & Ultralytics | Backend via ngrok</small>
+    </footer>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

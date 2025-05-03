@@ -1,0 +1,133 @@
+:root {
+    --lightest-green: #f0fff4;
+    --light-green:    #c8e6c9;
+    --mid-green:      #81c784;
+    --dark-green:     #388e3c;
+    --accent-green:   #66bb6a;
+    --text-dark:      #2e7d32;
+    --shadow:         rgba(0, 0, 0, 0.1);
+    --transition:     0.3s ease;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--lightest-green);
+    color: var(--text-dark);
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .app-container {
+    background: white;
+    border-radius: 1.25rem;
+    box-shadow: 0 4px 20px var(--shadow);
+    max-width: 420px;
+    width: 90%;
+    padding: 2rem;
+    text-align: center;
+    transition: transform var(--transition);
+  }
+  .app-container:hover {
+    transform: translateY(-5px);
+  }
+  
+  header h1 {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+    color: var(--dark-green);
+  }
+  header p {
+    font-size: 0.9rem;
+    color: var(--mid-green);
+    margin-bottom: 1.5rem;
+  }
+  
+  .upload-card {
+    position: relative;
+    border: 2px dashed var(--mid-green);
+    border-radius: 1rem;
+    padding: 1rem;
+    transition: background var(--transition), border-color var(--transition);
+  }
+  .upload-card:hover {
+    background: var(--light-green);
+    border-color: var(--accent-green);
+  }
+  
+  .upload-card input[type="file"] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .upload-label {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background: var(--accent-green);
+    color: white;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background var(--transition);
+  }
+  .upload-label:hover {
+    background: var(--dark-green);
+  }
+  
+  #preview {
+    display: block;
+    max-width: 100%;
+    max-height: 200px;
+    margin: 1rem auto 0;
+    border-radius: 0.75rem;
+    box-shadow: 0 2px 10px var(--shadow);
+  }
+  
+  .btn {
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    background: var(--accent-green);
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    transition: background var(--transition), transform var(--transition);
+  }
+  .btn:disabled {
+    background: var(--light-green);
+    cursor: not-allowed;
+  }
+  .btn:not(:disabled):hover {
+    background: var(--dark-green);
+    transform: translateY(-2px);
+  }
+  
+  .result-box {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: var(--lightest-green);
+    border-radius: 0.75rem;
+    box-shadow: inset 0 2px 5px var(--shadow);
+    min-height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+  }
+  
+  footer {
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    color: var(--mid-green);
+  }
+  
