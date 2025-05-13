@@ -3,22 +3,197 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoVision AI - Resource Documents</title>
-    <link rel="stylesheet" href="pdf.css">
+    <title>EcoVision AI - Resources</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .resource-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .resource-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .resource-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .resource-icon {
+            background: var(--primary-color);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+        }
+        
+        .resource-title {
+            margin: 0;
+            color: var(--accent-color);
+        }
+        
+        .resource-links {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .resource-links li {
+            margin-bottom: 10px;
+        }
+        
+        .resource-links a {
+            color: var(--accent-color);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .resource-links a:hover {
+            text-decoration: underline;
+        }
+        
+        .back-button {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .back-button:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
+    <div class="container resource-container">
+        <a href="index.html" class="back-button">
+            <i class="fas fa-arrow-left"></i> Back to Detection Tool
+        </a>
+        
         <header class="header">
             <h1><i class="fas fa-leaf"></i> EcoVision AI Resources</h1>
-            <p>Educational Materials & Research Documents</p>
+            <p>Environmental Information and Educational Materials</p>
         </header>
-
-        <div class="pdf-grid" id="pdfContainer">
-            <!-- PDF cards will be dynamically generated here -->
+        
+        <div class="resource-card">
+            <div class="resource-header">
+                <div class="resource-icon">
+                    <i class="fas fa-book"></i>
+                </div>
+                <h2 class="resource-title">Educational Resources</h2>
+            </div>
+            <ul class="resource-links">
+                <li>
+                    <a href="https://www.epa.gov/environmental-topics" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> EPA Environmental Topics
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.nationalgeographic.org/education/resource-library/" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> National Geographic Education Resources
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.worldwildlife.org/teaching-resources" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> WWF Teaching Resources
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="resource-card">
+            <div class="resource-header">
+                <div class="resource-icon">
+                    <i class="fas fa-trash-alt"></i>
+                </div>
+                <h2 class="resource-title">Waste Management</h2>
+            </div>
+            <ul class="resource-links">
+                <li>
+                    <a href="https://www.epa.gov/recycle" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> EPA Recycling Basics
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.plasticpollutioncoalition.org/guides" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> Plastic Pollution Guides
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.earth911.com/" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> Earth911 - Find Recycling Centers
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="resource-card">
+            <div class="resource-header">
+                <div class="resource-icon">
+                    <i class="fas fa-hands-helping"></i>
+                </div>
+                <h2 class="resource-title">Get Involved</h2>
+            </div>
+            <ul class="resource-links">
+                <li>
+                    <a href="https://www.cleanup.org/" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> Clean Up The World
+                    </a>
+                </li>
+                <li>
+                    <a href="https://oceanconservancy.org/trash-free-seas/international-coastal-cleanup/" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> Ocean Conservancy Cleanups
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.conservationvolunteers.org/" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> Conservation Volunteers
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="resource-card">
+            <div class="resource-header">
+                <div class="resource-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h2 class="resource-title">Environmental Data</h2>
+            </div>
+            <ul class="resource-links">
+                <li>
+                    <a href="https://www.globalforestwatch.org/" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> Global Forest Watch
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.resourcewatch.org/" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> Resource Watch
+                    </a>
+                </li>
+                <li>
+                    <a href="https://ourworldindata.org/environment" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> Our World in Data - Environment
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
-
-    <script src="pdf.js"></script>
 </body>
 </html>

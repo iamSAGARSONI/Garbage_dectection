@@ -32,7 +32,7 @@
         </div>
       </div>
        <div class="resources">
-          <a href="pdf.html" class="my-link">Resorces</a>
+          <a href="pdf.html" class="my-link">Resources</a>
         </div>
 
       <div class="preview-section">
@@ -46,13 +46,19 @@
       <div class="results-section">
         <h2>Analysis Results</h2>
         <div id="predictionResults"></div>
+        <div id="analysisResults">
+          <div class="impact-summary" id="impactSummary" style="display: none;">
+            <h3>Environmental Impact Summary</h3>
+            <div id="impactDetails"></div>
+          </div>
+        </div>
       </div>
 
       <!-- Webcam Modal -->
       <div id="webcamModal" class="modal">
         <div class="modal-content">
           <span class="close">&times;</span>
-          <video id="webcamFeed" playsinline></video>
+          <video id="webcamFeed" autoplay playsinline></video>
           <button class="btn capture-btn" id="captureBtn">
             <i class="fas fa-camera"></i> Capture
           </button>
